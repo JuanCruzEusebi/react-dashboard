@@ -42,9 +42,7 @@ const Topbar = () => {
                    alt="Jordan Walke - Creador de React" width="60"></img>
             </a>
           </li>
-    
         </ul>
-  
       </nav>
     </>
   )
