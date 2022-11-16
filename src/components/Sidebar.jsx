@@ -16,43 +16,43 @@ const Sidebar = () => {
         {/* Divider */}
         <hr className="sidebar-divider my-0"></hr>
       
-          {/* Nav Item - Dashboard */}
-          <li className="nav-item active">
-            <a className="nav-link" href="/">
-              <i className="fas fa-fw fa-tachometer-alt"></i>
-              <span>Dashboard - DH movies</span></a>
-          </li>
-      
-          {/* Divider */}
-          <hr className="sidebar-divider"></hr>
-  
-            {/* Heading */}
-            <div className="sidebar-heading">Actions</div>
-  
-            {/* Nav items - Pages */}
-            <li className="nav-item">
-              <a className="nav-link collapsed" href="/">
-                <i className="fas fa-fw fa-folder"></i>
-                <span>Pages</span>
-              </a>
-            </li>
-  
-            {/* Nav items - Charts */}
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                <i className="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
-            </li>
-  
-            {/* Nav items - Tables */}
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                <i className="fas fa-fw fa-table"></i>
-                <span>Tables</span></a>
-            </li>
-  
-            {/* Divider */}
-          <hr className="sidebar-divider d-none d-md-block"></hr>
+        {/* Nav Item - Dashboard */}
+        <li className="nav-item active">
+          <a className="nav-link" href="/">
+            <i className="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard - DH movies</span></a>
+        </li>
+    
+        {/* Divider */}
+        <hr className="sidebar-divider"></hr>
+
+        {/* Heading */}
+        <div className="sidebar-heading">Actions</div>
+
+        {/* Nav items - Pages */}
+        <li className="nav-item">
+          <a className="nav-link collapsed" href="/">
+            <i className="fas fa-fw fa-folder"></i>
+            <span>Pages</span>
+          </a>
+        </li>
+
+        {/* Nav items - Charts */}
+        <li className="nav-item">
+          <a className="nav-link" href="/">
+            <i className="fas fa-fw fa-chart-area"></i>
+            <span>Charts</span></a>
+        </li>
+
+        {/* Nav items - Tables */}
+        <li className="nav-item">
+          <a className="nav-link" href="/">
+            <i className="fas fa-fw fa-table"></i>
+            <span>Tables</span></a>
+        </li>
+
+        {/* Divider */}
+        <hr className="sidebar-divider d-none d-md-block"></hr>
       </ul>
     </>
   )
