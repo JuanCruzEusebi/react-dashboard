@@ -1,11 +1,31 @@
-import React from "react";
+import React , { useState, useEffect } from "react";
 import Card from "./Card";
 import BigCard from "./BigCard";
 import mandalorian from "../assets/images/mandalorian.jpg";
 import Button from "./Button";
 import Tile from "./Tile";
+import axios from "axios";
+
 
 const ContentRowTop = () => {
+
+  const [userCount, setUserCount] = useState(null);
+
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/api/users/')
+      .then(res => {
+      setUserCount(res.data.count)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }, [])
+
+
+
+
+
   let genres = [
     'Accion', 'Animación', 'Aventura', 'Ciencia Ficción',
     'Comedia', 'Documental', 'Drama', 'Fantasía', 'Infantiles',
@@ -22,10 +42,10 @@ const ContentRowTop = () => {
       <div className="row">
   
         {/* Movies in database */}
-        <Card colour='blue' title='Movies in data base' number='21' icon='fas fa-film' />
+        <Card colour='blue' title='Users in data base' number={userCount} icon='fas fa-film' />
   
         {/* Total awards */}
-        <Card colour='green' title='Total Awards' number='79' icon='fas fa-award' />
+        <Card colour='green' title='Total Users' number='79' icon='fas fa-award' />
   
         {/* Actors quantity */}
         <Card colour='yellow' title='Actors quantity' number='49' icon='fas fa-user' />
@@ -45,10 +65,6 @@ const ContentRowTop = () => {
                      src={mandalorian} alt=" Star Wars - Mandalorian "></img>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia
-                inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis
-                quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae
-                dolorem culpa ratione aperiam voluptatum?
               </p>
     
               <Button content='View movie detail' />
