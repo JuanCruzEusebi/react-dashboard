@@ -2,6 +2,8 @@ import React from "react";
 
 const Card = (props) => {
 
+  
+
 
   let colours = {
     blue: 'border-left-primary',
@@ -32,7 +34,7 @@ const Card = (props) => {
   return (
     <>    
       <div className="col-md-4 mb-4">
-        <div className={`card ${borderColor} shadow h-100 py-2`}>
+        <div className={`card ${borderColor} shadow h-100 py-2`} >
           <div className="card-body">
             <div className="row no-gutters align-items-center">
               <div className="col mr-2">

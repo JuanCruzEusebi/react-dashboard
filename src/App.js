@@ -9,7 +9,7 @@ import './assets/css/App.css';
 const App = () => {
   return (
     <div id='wrapper'>
-      <Sidebar />
+      <Sidebar  />
       
       <ContentWrapper top={<Topbar />} main={ <ContentRowTop />} footer={<Footer />} />
     </div>
