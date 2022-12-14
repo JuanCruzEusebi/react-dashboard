@@ -36,22 +36,22 @@ const ContentRowTop = () => {
   }, [])
 
 
-  const [productsInSale, setProductsInSale] = useState(null);
+  // const [productsInSale, setProductsInSale] = useState(null);
 
 
-  let arrayProd = []
+  // let arrayProd = []
 
-  useEffect(() => {
-    axios.get('http://localhost:3000/api/products/')
-      .then(res => {        
-        let prodData = res.data.data.products
-        prodData.map(ans => console.log(ans.in_sale))
-      })
+  // useEffect(() => {
+  //   axios.get('http://localhost:3000/api/products/')
+  //     .then(res => {        
+  //       let prodData = res.data.data.products
+  //       prodData.map(ans => console.log(ans.in_sale))
+  //     })
       
-    .catch(err => {
-      console.log(err)
-    })
-  }, [])  
+  //   .catch(err => {
+  //     console.log(err)
+  //   })
+  // }, [])  
 
 
 
@@ -76,8 +76,7 @@ const ContentRowTop = () => {
         {/* Total awards */}
         <Card colour='green' title='Total Products' number={productsCount} icon='fas fa-award' />
   
-        {/* Actors quantity */}
-        <Card colour='yellow' title='Actors quantity' number='49' icon='fas fa-user' />
+
       </div>
       {/* End movies in database */}
   
