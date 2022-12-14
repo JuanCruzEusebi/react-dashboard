@@ -71,10 +71,10 @@ const ContentRowTop = () => {
       <div className="row" >
   
         {/* Movies in database */}
-        <Card colour='blue' title='Users in data base' number={userCount} icon='fas fa-film' />
+        <Card colour='blue' title='Users in data base' number={userCount} icon='fas fa-user' />
   
         {/* Total awards */}
-        <Card colour='green' title='Total Products' number={productsCount} icon='fas fa-award' />
+        <Card colour='green' title='Total Products' number={productsCount} icon='fas fa-wine-bottle' />
   
 
       </div>
@@ -85,7 +85,7 @@ const ContentRowTop = () => {
       <div className="row">
         {/* Last movie in database */}
         <div className="col-lg-6 mb-4">
-          <BigCard title='Best seller to date'>
+          <BigCard title='Best seller to date - Reserve Chardonnay 2019'>
             
             <div className="card-body" >
               <div className="text-center">

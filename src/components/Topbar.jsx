@@ -1,5 +1,4 @@
 import React from "react";
-import jordanWalke from '../assets/images/jordan-walke.png';
 
 const Topbar = () => {
 
@@ -22,8 +21,7 @@ const Topbar = () => {
           <li className="nav-item dropdown no-arrow" >
             <a className="nav-link dropdown-toggle" href="/" id="userDropdown">
               <span className="mr-2 d-none d-lg-inline text-gray-600 small">Juan Cruz Eusebi</span>
-              <img className="img-profile rounded-circle" src={jordanWalke}
-                   alt="Jordan Walke - Creador de React" width="60"></img>
+
             </a>
           </li>
         </ul>
